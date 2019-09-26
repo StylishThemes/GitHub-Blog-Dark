@@ -1,0 +1,40 @@
+{
+  "name": "github-blog-dark",
+  "title": "GitHub Blog Dark",
+  "version": "0.9.9",
+  "description": "A dark GitHub blog theme",
+  "license": "CC-BY-SA-4.0",
+  "author": "StylishThemes",
+  "repository": "GitHub-Blog-Dark",
+  "homepage": "https://github.com/StylishThemes/GitHub-Blog-Dark",
+  "bugs": {
+    "url": "https://github.com/StylishThemes/GitHub-Blog-Dark/issues"
+  },
+  "main": "github-blog-dark.user.css",
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-silverwind": "^4.1.1",
+    "perfectionist": "^2.4.0",
+    "ver": "^5.1.4",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "updates": "^9.0.0"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "clean": "npm run lintfix && npm run perfectionist && node tools/fix-perfectionist.js",
+    "eslint": "eslint --quiet --color tools/*.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "major": "npx ver -p major *.user.css",
+    "minor": "npx ver -p minor *.user.css",
+    "patch": "npx ver -p patch *.user.css",
+    "perfectionist": "npx perfectionist github-blog-dark.user.css github-blog-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --color -- github-blog-dark.user.css",
+    "lintfix": "npx stylelint --fix --color -- github-blog-dark.user.css",
+    "test": "npm run eslint && npm run stylelint",
+    "update": "npx updates -cu && npm install"
+  }
+}
