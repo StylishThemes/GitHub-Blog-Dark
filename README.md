@@ -33,7 +33,7 @@ A userstyle extension is required:
 
 Then:
 
-📦 [Install the usercss](https://github.com/StylishThemes/GitHub-Blog-Dark/raw/master/GitHub-Blog-Dark.user.css). It supports automatic updates.
+📦 [Install the usercss](https://github.com/StylishThemes/GitHub-Blog-Dark/raw/master/github-blog-dark.user.css). It supports automatic updates.
 
 ## Contributions
 
