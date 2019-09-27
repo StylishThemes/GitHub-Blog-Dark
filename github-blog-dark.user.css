@@ -50,6 +50,7 @@
     --bg-color-2: #222;
     --bg-color-3: rgba(34, 34, 34, .533);
     --bg-color-4: #444;
+    --bc-color-2: #282828;
     --bc-color-3: #333;
     --bc-color-5: #555;
     --bl-color-1: #182030;
@@ -88,8 +89,18 @@
   svg {
     fill: currentColor;
   }
-  .icon-mark-github.icon {
+  .icon-mark-github.icon, .btn-outline:hover .icon-arrow-skinny-right.icon {
     fill: var(--tc-color-c);
+  }
+  .category-panel__next[disabled] .icon, .category-panel__prev[disabled] .icon {
+    fill: var(--bc-color-5);
+  }
+  .category-panel__next .icon, .category-panel__prev .icon {
+    fill: var(--tc-color-b);
+  }
+  .all-posts__view-more .icon, .header-search .search-submit .icon,
+  .icon-arrow-skinny-right.icon {
+    fill: var(--main-color);
   }
   input:focus, select:focus, button:focus {
     border-color: var(--main-color) !important;
@@ -97,20 +108,40 @@
     outline-color: var(--main-color) !important;
   }
   /* background colors */
-  .category__list::after {
+  .category__list::after, .search-form .search-field {
     background: transparent !important;
   }
   .all-posts, .all-posts__container, .Box {
     background-color: var(--bg-color-1) !important;
   }
-  .bg-gray, .sub-menu, .header-search {
+  .bg-gray, .header-search, .author-biography {
     background-color: var(--bg-color-2) !important;
+  }
+  .primary-nav .sub-menu {
+    background: var(--bc-color-2);
   }
   .bg-gray-light {
     background-color: var(--bg-color-3) !important;
   }
   .category__list a::before {
     background-color: var(--bg-color-3) !important;
+  }
+  .author__hero::after {
+    background: var(--bc-color-3);
+  }
+  .form-control, .form-select {
+    background-color: var(--bg-color-1);
+    border: 1px solid var(--bg-color-4);
+    color: var(--tc-color-c);
+    box-shadow: inset 0 1px 2px var(--bg-color-3);
+  }
+  .custom-select select {
+    background: var(--bg-color-2);
+    color: var(--tc-color-e);
+    border: 1px solid var(--bg-color-4);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
   /* blue */
   .cta-global__primary-bg, div[style="background-color: #032f62;"] {
@@ -123,12 +154,15 @@
   .post__content .chat .message.robot {
     outline: 1px solid var(--bg-color-4);
   }
+  .underline-dash {
+    background-image: linear-gradient(90deg, var(--bc-color-5) 50%, hsla(0, 0%, 100%, 0) 0);
+  }
   /* border colors */
   .primary-nav .sub-menu::after, .primary-nav .sub-menu::before,
   .header-search::before {
-    border-bottom-color: var(--bg-color-2) !important;
+    border-bottom-color: var(--bc-color-2) !important;
   }
-  .markdown-body h1, .markdown-body h2 {
+  .markdown-body h1, .markdown-body h2, .search-form .search-field {
     border-bottom: 1px solid var(--bg-color-4);
   }
   .category__list, .cl-post-feed .all-posts .post-item {
@@ -138,17 +172,21 @@
   .cl-post-feed .all-posts .post-item::before, .markdown-body hr {
     background: var(--bc-color-5);
   }
+  .cl-post-feed .all-posts .post-item:last-child::after {
+    background: var(--bc-color-4);
+  }
   /* border end */
   .text-gray-light, .category-panel__prev:not([disabled]) .icon,
   .category-panel__next:not([disabled]) .icon {
     color: var(--tc-color-d) !important;
   }
-  h1, h2, h3, h4, h5, h6, .post-item__excerpt {
+  h1, h2, h3, h4, h5, h6, .post-item__excerpt, .search-form .search-field {
     color: var(--tc-color-c) !important;
   }
   .text-gray, .link-gray, .markdown-body p, .markdown-body li, .author-block,
   .post-item__categories a, .post__categories a, .heading-link, .post-item__date,
-  .category-block__sub-cat a {
+  .category-block__sub-cat a, .post__meta, .search-form__fitlers-label,
+  .author-biography__username {
     color: var(--tc-color-b) !important;
   }
   .text-white, .site-header a, .post-list__item-title, .post-list__item-title a,
@@ -166,12 +204,13 @@
     border-color: var(--main-color) !important;
     color: var(--main-color) !important;
   }
-  .btn, .btn-outline:hover {
+  .btn-outline.selected, .btn-outline:active, .btn-outline:hover,
+  [open] > .btn-outline {
     background: var(--main-color) !important;
     border-color: var(--bc-color-3) !important;
     color: var(--tc-color-e) !important;
   }
-  input {
+  input:not(.search-field) {
     background-color: var(--bg-color-0) !important;
     color: var(--tc-color-d) !important;
     border-color: var(--bc-color-3) !important;
@@ -188,7 +227,10 @@
   .category-featured-posts .featured-post__image:hover,
   .post-featured__image:hover {
     filter: none !important;
-    opacity: .8 !important;
+  }
+  .all-posts__container::before, .post__header::before,
+  .search-block__container::before, .author-hero__title::before {
+    filter: brightness(60%);
   }
   .hero-post__image {
     filter: invert(85%) hue-rotate(180deg) brightness(110%) !important;
