@@ -55,6 +55,8 @@
     --bc-color-5: #555;
     --bl-color-1: #182030;
     --bl-color-2: #246;
+    --rd-color-1: #380000;
+    --gr-color-1: #002800;
     --fg-color-b: #bbb;
     --fg-color-c: #ccc;
     --fg-color-d: #ddd;
@@ -245,5 +247,11 @@
   .hljs {
     color: var(--fg-color-c);
     background: var(--bg-color-0);
+  }
+  .hljs-deletion {
+    background: var(--rd-color-1);
+  }
+  .hljs-addition {
+    background: var(--gr-color-1);
   }
 }
