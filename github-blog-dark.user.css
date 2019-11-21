@@ -55,10 +55,10 @@
     --bc-color-5: #555;
     --bl-color-1: #182030;
     --bl-color-2: #246;
-    --tc-color-b: #bbb;
-    --tc-color-c: #ccc;
-    --tc-color-d: #ddd;
-    --tc-color-e: #eee;
+    --fg-color-b: #bbb;
+    --fg-color-c: #ccc;
+    --fg-color-d: #ddd;
+    --fg-color-e: #eee;
   }
   body {
     background-color: var(--bg-color-1) !important;
@@ -67,7 +67,7 @@
     background-origin: padding-box !important;
     background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
-    color: var(--tc-color-e) !important;
+    color: var(--fg-color-e) !important;
   }
   a, .post-list__item-title:hover, .post-list__item-title a:hover,
   .post-item__title a:hover, .post__categories a:hover, .heading-link:focus,
@@ -90,13 +90,13 @@
     fill: currentColor;
   }
   .icon-mark-github.icon, .btn-outline:hover .icon-arrow-skinny-right.icon {
-    fill: var(--tc-color-c);
+    fill: var(--fg-color-c);
   }
   .category-panel__next[disabled] .icon, .category-panel__prev[disabled] .icon {
     fill: var(--bc-color-5);
   }
   .category-panel__next .icon, .category-panel__prev .icon {
-    fill: var(--tc-color-b);
+    fill: var(--fg-color-b);
   }
   .all-posts__view-more .icon, .header-search .search-submit .icon,
   .icon-arrow-skinny-right.icon {
@@ -132,12 +132,12 @@
   .form-control, .form-select {
     background-color: var(--bg-color-1);
     border: 1px solid var(--bg-color-4);
-    color: var(--tc-color-c);
+    color: var(--fg-color-c);
     box-shadow: inset 0 1px 2px var(--bg-color-3);
   }
   .custom-select select {
     background: var(--bg-color-2);
-    color: var(--tc-color-e);
+    color: var(--fg-color-e);
     border: 1px solid var(--bg-color-4);
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -178,20 +178,20 @@
   /* border end */
   .text-gray-light, .category-panel__prev:not([disabled]) .icon,
   .category-panel__next:not([disabled]) .icon {
-    color: var(--tc-color-d) !important;
+    color: var(--fg-color-d) !important;
   }
   h1, h2, h3, h4, h5, h6, .post-item__excerpt, .search-form .search-field {
-    color: var(--tc-color-c) !important;
+    color: var(--fg-color-c) !important;
   }
   .text-gray, .link-gray, .markdown-body p, .markdown-body li, .author-block,
   .post-item__categories a, .post__categories a, .heading-link, .post-item__date,
   .category-block__sub-cat a, .post__meta, .search-form__fitlers-label,
   .author-biography__username {
-    color: var(--tc-color-b) !important;
+    color: var(--fg-color-b) !important;
   }
   .text-white, .site-header a, .post-list__item-title, .post-list__item-title a,
   .hero-post__title a, .post-item__title a, .featured-post__title a {
-    color: var(--tc-color-e) !important;
+    color: var(--fg-color-e) !important;
   }
   .category-panel__prev[disabled] .icon, .category-panel__next[disabled] .icon {
     color: var(--bc-color-5) !important;
@@ -208,11 +208,11 @@
   [open] > .btn-outline {
     background: var(--main-color) !important;
     border-color: var(--bc-color-3) !important;
-    color: var(--tc-color-e) !important;
+    color: var(--fg-color-e) !important;
   }
   input:not(.search-field) {
     background-color: var(--bg-color-0) !important;
-    color: var(--tc-color-d) !important;
+    color: var(--fg-color-d) !important;
     border-color: var(--bc-color-3) !important;
   }
   .icon-logo-github, .site-footer__social-list .icon,
@@ -243,7 +243,7 @@
     background-color: var(--bg-color-0);
   }
   .hljs {
-    color: var(--tc-color-c);
+    color: var(--fg-color-c);
     background: var(--bg-color-0);
   }
 }
