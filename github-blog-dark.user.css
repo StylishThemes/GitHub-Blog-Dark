@@ -77,19 +77,24 @@
   a, .post-list__item-title:hover, .post-list__item-title a:hover,
   .post-item__title a:hover, .post__categories a:hover, .heading-link:focus,
   .heading-link:hover, .primary-nav .menu-item a:focus,
-  .primary-nav .menu-item a:hover, .link-gray:hover,
-  .category-block:hover .category-block__title, .category-block__sub-cat a:hover,
-  .post-item__date a:focus, .post-item__date a:hover,
+  .primary-nav .menu-item a:hover, .category-block:hover .category-block__title,
+  .category-block__sub-cat a:hover, .post-item__date a:focus,
+  .post-item__date a:hover, .featured-post__title a:hover {
+    color: var(--main-color);
+    background-color: transparent;
+    opacity: .9;
+  }
+  .link-gray:hover, .hero-post__title a:hover, .post-list__item-title:hover,
+  .post-list__item-title a:hover, .post-item__title a:hover,
   .featured-post__title a:hover {
     color: var(--main-color) !important;
-    background-color: transparent !important;
   }
   .category-block:hover .category-block__title .icon {
     fill: var(--main-color) !important;
   }
   a:hover, a:visited, a:active, a.link-gray:hover, a.link-gray:active,
   .btn:not(.btn-outline):hover, .hover-grow img {
-    filter: brightness(110%) !important;
+    opacity: 1;
   }
   svg {
     fill: currentColor;
@@ -201,7 +206,7 @@
   .category-panel__prev[disabled] .icon, .category-panel__next[disabled] .icon {
     color: var(--bc-color-5) !important;
   }
-  .post-item__date a {
+  .post-item__date a, .category__list a {
     color: inherit !important;
   }
   .btn-outline {
