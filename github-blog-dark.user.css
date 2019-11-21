@@ -254,4 +254,20 @@
   .hljs-addition {
     background: var(--gr-color-1);
   }
+  /* category img fixes protect retinas, enabled */
+  img[src*="BlogHeaders_Aligned_ENGINEERING_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_CHANGELOG_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_EDUCATION_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_COMMUNITY_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_INSIGHTS_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_COMPANY_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_POLICY_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_EDITOR-TOOLS_1008x602_x2.png"],
+  img[src*="BlogHeaders_Aligned_PRODUCT_1008x602_x2.png"],
+  img[src*="security-2016-1204.png"], img[src*="Community@2x.png"],
+  img[src*="Company@2x-2.png"], img[src*="Engineering@2x"],
+  img[src*="Enterprise@2x-2.png"], img[src*="Product@2x.png"] {
+    filter: invert(1) hue-rotate(180deg) contrast(80%);
+    mix-blend-mode: exclusion;
+  }
 }
