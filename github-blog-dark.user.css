@@ -231,19 +231,16 @@
   }
   .category-hero__bg img, img.category-panel__img,
   .category-featured-posts .featured-post__image, .post-featured__image {
-    filter: invert(85%) hue-rotate(180deg) brightness(80%) !important;
-    mix-blend-mode: exclusion !important;
+    filter: brightness(80%);
+    mix-blend-mode: exclusion;
   }
   .category-featured-posts .featured-post__image:hover,
   .post-featured__image:hover {
-    filter: none !important;
+    filter: none;
   }
   .all-posts__container::before, .post__header::before,
   .search-block__container::before, .author-hero__title::before {
     filter: brightness(60%);
-  }
-  .hero-post__image {
-    filter: invert(85%) hue-rotate(180deg) brightness(110%) !important;
   }
   .header-search__toggle.btn-outline {
     background-color: transparent !important;
