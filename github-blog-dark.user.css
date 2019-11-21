@@ -40,7 +40,7 @@
   fixed EOT;
 }
 ==/UserStyle== */
-@-moz-document domain("github.blog") {
+@-moz-document regexp("https://github\.blog\/.*$") {
   :root {
     --main-color: /*[[main-color]]*/;
     --bg-custom: /*[[bg-custom]]*/;
