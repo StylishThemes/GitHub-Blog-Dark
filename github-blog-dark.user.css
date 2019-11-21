@@ -57,6 +57,7 @@
     --bl-color-2: #246;
     --rd-color-1: #380000;
     --gr-color-1: #002800;
+    --fg-color-9: #999;
     --fg-color-b: #bbb;
     --fg-color-c: #ccc;
     --fg-color-d: #ddd;
@@ -258,6 +259,27 @@
   }
   .hljs-addition {
     background: var(--gr-color-1);
+  }
+  .pagination a, .pagination em, .pagination span {
+    color: var(--main-color);
+    background: var(--bg-color-1);
+    border: 1px solid var(--bc-color-5);
+  }
+  .pagination a:focus, .pagination a:hover, .pagination em:focus,
+  .pagination em:hover, .pagination span:focus, .pagination span:hover {
+    background-color: var(--bg-color-2);
+    border-color: var(--bc-color-5);
+  }
+  .pagination .current, .pagination .current:hover {
+    color: var(--fg-color-e);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  .pagination .disabled, .pagination .disabled:hover, .pagination .gap,
+  .pagination .gap:hover {
+    color: var(--fg-color-9);
+    background-color: var(--bg-color-1);
+    opacity: .7;
   }
   /* category img fixes protect retinas, enabled */
   img[src*="BlogHeaders_Aligned_ENGINEERING_1008x602_x2.png"],
