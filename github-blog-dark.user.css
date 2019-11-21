@@ -71,6 +71,9 @@
     /*[[bg-options]]*/
     color: var(--fg-color-e) !important;
   }
+  ::placeholder {
+    color: var(--bg-color-4);
+  }
   a, .post-list__item-title:hover, .post-list__item-title a:hover,
   .post-item__title a:hover, .post__categories a:hover, .heading-link:focus,
   .heading-link:hover, .primary-nav .menu-item a:focus,
