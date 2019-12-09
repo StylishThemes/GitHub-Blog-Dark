@@ -75,6 +75,10 @@
   ::placeholder {
     color: var(--bg-color-4);
   }
+  .universe-compact-list li {
+    border: 1px solid var(---bc-color-5);
+    background-color: var(--bc-color-2);
+  }
   a, .post-list__item-title:hover, .post-list__item-title a:hover,
   .post-item__title a:hover, .post__categories a:hover, .heading-link:focus,
   .heading-link:hover, .primary-nav .menu-item a:focus,
