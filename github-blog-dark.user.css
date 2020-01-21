@@ -303,7 +303,8 @@
   img[src*="BlogHeaders_Aligned_PRODUCT_1008x602_x2.png"],
   img[src*="security-2016-1204.png"], img[src*="Community@2x.png"],
   img[src*="Company@2x-2.png"], img[src*="Engineering@2x"],
-  img[src*="Enterprise@2x-2.png"], img[src*="Product@2x.png"] {
+  img[src*="Enterprise@2x-2.png"], img[src*="Product@2x.png"],
+  img[src*="company-twitter"], img[src*="see-what-new-github-enterprise"] {
     filter: invert(1) hue-rotate(180deg) contrast(80%);
     mix-blend-mode: exclusion;
   }
