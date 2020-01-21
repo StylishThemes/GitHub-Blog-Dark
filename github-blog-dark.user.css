@@ -127,7 +127,8 @@
     outline-color: var(--main-color) !important;
   }
   /* background colors */
-  .category__list::after, .search-form .search-field {
+  .category__list::after, .search-form .search-field,
+  a[style*="background-color: #ffffff;"] {
     background: transparent !important;
   }
   .all-posts, .all-posts__container, .Box {
