@@ -89,9 +89,13 @@
     background-color: transparent;
     opacity: .9;
   }
+  .category-block:hover {
+    color: var(--main-color);
+  }
   .link-gray:hover, .hero-post__title a:hover, .post-list__item-title:hover,
   .post-list__item-title a:hover, .post-item__title a:hover,
-  .featured-post__title a:hover {
+  .featured-post__title a:hover, .category-block:hover h4,
+  .post-item__date a:hover {
     color: var(--main-color) !important;
   }
   .category-block:hover .category-block__title .icon {
@@ -200,9 +204,11 @@
   }
   .text-gray, .link-gray, .markdown-body p, .markdown-body li, .author-block,
   .post-item__categories a, .post__categories a, .heading-link, .post-item__date,
-  .category-block__sub-cat a, .post__meta, .search-form__fitlers-label,
-  .author-biography__username {
+  .post__meta, .search-form__fitlers-label, .author-biography__username {
     color: var(--fg-color-b) !important;
+  }
+  .category-block__sub-cat a {
+    color: var(--fg-color-b);
   }
   .text-white, .site-header a, .post-list__item-title, .post-list__item-title a,
   .hero-post__title a, .post-item__title a, .featured-post__title a {
