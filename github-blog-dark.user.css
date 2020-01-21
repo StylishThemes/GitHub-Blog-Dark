@@ -104,7 +104,8 @@
   svg {
     fill: currentColor;
   }
-  .icon-mark-github.icon, .btn-outline:hover .icon-arrow-skinny-right.icon {
+  .icon-mark-github.icon, .btn-outline:hover .icon-arrow-skinny-right.icon,
+  .icon-arrow-skinny-right.icon {
     fill: var(--fg-color-c);
   }
   .category-panel__next[disabled] .icon, .category-panel__prev[disabled] .icon {
@@ -113,8 +114,7 @@
   .category-panel__next .icon, .category-panel__prev .icon {
     fill: var(--fg-color-b);
   }
-  .all-posts__view-more .icon, .header-search .search-submit .icon,
-  .icon-arrow-skinny-right.icon {
+  .all-posts__view-more .icon, .header-search .search-submit .icon {
     fill: var(--main-color);
   }
   input:focus, select:focus, button:focus {
@@ -230,8 +230,7 @@
     color: var(--fg-color-d) !important;
     border-color: var(--bc-color-3) !important;
   }
-  .icon-logo-github, .site-footer__social-list .icon,
-  .hover-grow:not(:hover) .icon-arrow-skinny-right {
+  .icon-logo-github, .site-footer__social-list .icon {
     filter: invert(80%) !important;
   }
   .category-hero__bg img, img.category-panel__img,
