@@ -28,13 +28,13 @@
     "clean": "npm run lintfix && npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "npx versions -p -C major *.user.css",
-    "minor": "npx versions -p -C minor *.user.css",
-    "patch": "npx versions -p -C patch *.user.css",
+    "major": "versions -p -C major *.user.css",
+    "minor": "versions -p -C minor *.user.css",
+    "patch": "versions -p -C patch *.user.css",
     "perfectionist": "npx perfectionist github-blog-dark.user.css github-blog-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --color -- github-blog-dark.user.css",
-    "lintfix": "npx stylelint --fix --color -- github-blog-dark.user.css",
-    "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && npm install"
+    "stylelint": "stylelint --color -- github-blog-dark.user.css",
+    "lintfix": "stylelint --fix --color -- github-blog-dark.user.css",
+    "test": "run eslint && npm run stylelint",
+    "update": "updates -cu && npm install"
   }
 }
