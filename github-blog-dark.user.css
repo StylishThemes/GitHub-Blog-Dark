@@ -204,16 +204,19 @@
     color: var(--fg-color-c) !important;
   }
   .text-gray, .link-gray, .markdown-body p, .markdown-body li, .author-block,
-  .post-item__categories a, .post__categories a, .heading-link, .post-item__date,
-  .post__meta, .search-form__fitlers-label, .author-biography__username {
+  .heading-link, .post-item__date, .post__meta, .search-form__fitlers-label,
+  .author-biography__username {
     color: var(--fg-color-b) !important;
   }
-  .category-block__sub-cat a {
+  .category-block__sub-cat a, .post__categories a, .post-item__categories a {
     color: var(--fg-color-b);
   }
-  .text-white, .site-header a, .post-list__item-title, .post-list__item-title a,
+  .text-white, .post-list__item-title, .post-list__item-title a,
   .hero-post__title a, .post-item__title a, .featured-post__title a {
     color: var(--fg-color-e) !important;
+  }
+  .site-header a {
+    color: var(--fg-color-e);
   }
   .category-panel__prev[disabled] .icon, .category-panel__next[disabled] .icon {
     color: var(--bc-color-5) !important;
