@@ -294,6 +294,9 @@
     background-color: var(--bg-color-1);
     opacity: .7;
   }
+  .social-links__text:hover {
+    color: var(--main-color);
+  }
   /* category img fixes protect retinas, enabled */
   img[src*="BlogHeaders_Aligned_ENGINEERING_1008x602_x2.png"],
   img[src*="BlogHeaders_Aligned_CHANGELOG_1008x602_x2.png"],
