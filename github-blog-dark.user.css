@@ -294,7 +294,7 @@
     background-color: var(--bg-color-1);
     opacity: .7;
   }
-  .social-links__text:hover {
+  .post__social-share .social-links__text:hover {
     color: var(--main-color);
   }
   /* category img fixes protect retinas, enabled */
