@@ -120,7 +120,8 @@
   .category-panel__next .icon, .category-panel__prev .icon {
     fill: var(--fg-color-b);
   }
-  .all-posts__view-more .icon, .header-search .search-submit .icon {
+  .all-posts__view-more .icon, .header-search .search-submit .icon,
+  .search-form__button .icon {
     fill: var(--main-color);
   }
   select:focus, button:focus {
