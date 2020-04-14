@@ -209,7 +209,8 @@
   .author-biography__username {
     color: var(--fg-color-b) !important;
   }
-  .category-block__sub-cat a, .post__categories a, .post-item__categories a {
+  .category-block__sub-cat a, .post__categories a, .post-item__categories a,
+  .post__social-share .social-links__text {
     color: var(--fg-color-b);
   }
   .text-white, .post-list__item-title, .post-list__item-title a,
