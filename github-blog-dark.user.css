@@ -73,7 +73,8 @@
     color: var(--fg-color-e) !important;
   }
   ::placeholder {
-    color: var(--bg-color-4);
+    color: var(--bc-color-5);
+    opacity: 1;
   }
   .universe-compact-list li {
     border: 1px solid var(---bc-color-5);
