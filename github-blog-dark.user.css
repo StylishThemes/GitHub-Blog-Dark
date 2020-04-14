@@ -89,7 +89,8 @@
     background-color: transparent;
     opacity: .9;
   }
-  .category-block:hover {
+  .category-block:hover,
+  .post__social-share .social-links__item a:hover .social-links__text {
     color: var(--main-color);
   }
   .link-gray:hover, .hero-post__title a:hover, .post-list__item-title:hover,
