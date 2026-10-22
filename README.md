@@ -1,3 +1,5 @@
+**Retired:** the GitHub Blog has a built-in dark mode now.
+
 <h1 align="center">GitHub Blog Dark</h1>
 <br>
 <p align="center">
